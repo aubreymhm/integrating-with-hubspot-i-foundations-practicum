@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+       form(method="post")
+        fieldset
+            legend Pet information
+            p
+                label(for="petname") Name: 
+                    input(type="text", name="petname", value="")
+            p
+                select(name="size")
+                    option(value="") -- Size
+                    option(value="Small") Small
+                    option(value="Medium") Medium
+                    option(value="Large") Large
+            p
+                select(name="eyecolor")
+                    option(value="") -- Eye colour
+                    option(value="Blue") Blue
+                    option(value="Green") Green
+                    option(value="Brown") Brown
+                    option(value="Black") Black
+            p.buttons
+                input(type="submit", value="Save")
+        a(href='/') Return to the homepage
